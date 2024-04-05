@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#cursor{
+    height: 2vh;
+    width: 2vh;
+    background-color: crimson;
+    border-radius: 50%;
+    position: fixed;
+    transition: all linear 0.12s;
+    pointer-events: none;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box img{
+    width: 15vh;
+    height: 15vh;
+    filter: blur(0);
+}
+.box:hover{
+    cursor: pointer;
+    /* background-color: rgb(12, 232, 158); */
+    transition: all 0.2s ease-in;
+}
